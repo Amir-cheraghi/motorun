@@ -1,2 +1,2 @@
 const app = require('./app/index')
-app()
+new app()

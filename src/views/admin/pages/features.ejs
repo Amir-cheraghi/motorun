@@ -1,0 +1,153 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>تنظیمات قالب</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-left">
+            <li class="breadcrumb-item"><a href="/admin">خانه</a></li>
+            <li class="breadcrumb-item active">تنظیمات قالب</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- Default box -->
+    <div class="card card-default collapsed-card">
+      <div class="card-header">
+        <h3 class="card-title"  data-widget="collapse" data-toggle="tooltip">اسلایدر</h3>
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="بستن">
+            <i class="fa fa-minus"></i></button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        لطفا جهت ایجاد یا ویرایش اسلایدر از فرم زیر استفاده کنید.
+
+
+        <section class="content mt-3">
+          <div class="card card-default collapsed-card">
+
+            <div class="card-header">
+              <h3 class="card-title" data-widget="collapse" data-toggle="tooltip">ایجاد اسلاید</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="بستن">
+                  <i class="fa fa-minus"></i></button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <form id="createSlideForm">
+              <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <input type="checkbox" checked onchange="disableText('sliderTitle' , this)">
+                  </span>
+                </div>
+                <input type="text" class="form-control" name="sliderTitle" id="sliderTitle"  placeholder="عنوان اسلاید ... ">
+              </div>
+
+              <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <input type="checkbox" checked  onchange="disableText('sliderDescription' , this)">
+                  </span>
+                </div>
+                <textarea class="form-control" name="sliderDescription" id="sliderDescription" rows="3" placeholder="توضیحات اسلاید ... "></textarea>
+                </div>
+
+              <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <input type="checkbox" checked onchange="disableText('sliderLink', this) " >
+                  </span>
+                </div>
+                <input type="text" name="sliderLink" id="sliderLink" class="form-control" placeholder="لینک به صفحه ">
+              </div>
+
+              
+              <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <input type="checkbox" checked onchange="disableText('sliderLinkTitle' , this)">
+                  </span>
+                </div>
+                <input type="text" name="sliderLinkTitle" id="sliderLinkTitle" class="form-control"  placeholder="متن لینک (برو ، انتقال به صفحه و ...) ">
+              </div>
+
+              <div class="input-group mt-3">
+                <div class="custom-file">
+                  <input type="file" name="sliderImage" class="custom-file-input">
+                  <label class="custom-file-label" for="exampleInputFile">انتخاب فایل</label>
+                </div>
+                <div class="input-group-append">
+                  <span class="input-group-text" id="">Upload</span>
+                </div>
+              </div>
+
+            </form>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span class="float-right text-warning">اطلاعاتی که تیک انها فعال نباشد در نظر گرفته نمیشود </span>
+              <button class="btn btn-primary float-left">ایجاد</button>
+            </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="card card-default collapsed-card">
+
+            <div class="card-header">
+              <h3 class="card-title "  data-widget="collapse" data-toggle="tooltip">اسلاید ها</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="بستن">
+                  <i class="fa fa-minus"></i></button>
+              </div>
+            </div>
+
+            <div class="card-body">
+
+            </div>
+
+            <div class="card-footer">
+
+            </div>
+
+          </div>
+        </section>
+
+        
+        
+      </div>
+
+  </section>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+
+</div>
+<!-- /.card-footer-->
+</div>
+<!-- /.card -->
+
+</section>
+
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<script src="/js/script.js"></script>

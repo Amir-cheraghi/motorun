@@ -45,7 +45,7 @@ module.exports =  class application {
             store : mongoStore.create({mongoUrl : process.env.DB_URL})
         }))
         app.use(flash())
-        app.use(express.static(path.join(process.cwd(),'/src/public')))
+        app.use(express.static(path.join(process.cwd(),'/src/public/')))
         app.set('views' , path.join(process.cwd(),'/src/views'))
         app.set('view engine' , 'ejs')
         app.use(layouts)

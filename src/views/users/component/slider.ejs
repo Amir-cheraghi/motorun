@@ -4,42 +4,51 @@
     <!--  ==========  -->
     <div class="fullwidthbanner-container">
         <div class="fullwidthbanner">
-            <ul>
+            <ul id="slider">
                
+                <% sliderData.forEach(el => { %>
+                 
                 
                 <li data-transition="premium-random" data-slotamount="3">
-                    <a href=""><img src="images/dummy/slides/2/slide.jpg" alt="slider img" width="1400" height="377" /></a>
+                    <a href="<%-el.sliderLink%>"><img src="<%-el.imagePath%> " alt="slider img" width="1400" height="377" /></a>
                     
                   
                     <!-- texts -->
-                    <div class="caption lfl big_theme"
+                    <% if (el.sliderTitle) { %>
+                     <div class="caption lfl big_theme"
                         data-x="120" 
                         data-y="120"
                         data-speed="1000" 
                         data-start="500" 
                         data-easing="easeInOutBack">
-                        عنوان
+                        <%-el.sliderTitle%>
                     </div>
+                    <% } %>
                     
-                    <div class="caption lfl small_theme"
+                    <% if (el.sliderDescription) { %>
+                    <div class="caption lfl small_theme bg-black"
                         data-x="120" 
                         data-y="190"
                         data-speed="1000" 
                         data-start="700" 
                         data-easing="easeInOutBack">
-                        توضیحات متن و ...
+                        <%-el.sliderDescription%>
                     </div>
+                    <% } %>
                     
-                    <a href="features.html" class="caption lfl btn btn-primary btn_theme"
+                    <% if (el.sliderLinkTitle) { %>
+                    <a href="<%-el.sliderLink%>" class="caption lfl btn btn-primary btn_theme"
                         data-x="120" 
                         data-y="260"
                         data-speed="1000" 
                         data-start="900" 
                         data-easing="easeInOutBack">
-                        لینک به صفحه
+                        <%-el.sliderLinkTitle%>
+                    <% } %>
+
                     </a>
                 </li><!-- /slide -->
-                
+                <% }) %>
                 
             </ul>
             <div class="tp-bannertimer"></div>

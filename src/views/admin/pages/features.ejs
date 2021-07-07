@@ -100,7 +100,7 @@
             <div class="card-footer">
               <div>
                 <span class="float-right text-warning">اطلاعاتی که تیک انها فعال نباشد در نظر گرفته نمیشود </span>
-              <button class="btn btn-primary float-left">ایجاد</button>
+              <button class="btn btn-primary float-left" onclick="createSlide()">ایجاد</button>
             </div>
             </div>
 
@@ -118,7 +118,30 @@
               </div>
             </div>
 
-            <div class="card-body">
+            <div class="card-body" id="slides">
+
+              <section class="content">
+                <div class="card card-default collapsed-card">
+      
+                  <div class="card-header p-3">
+                    <h3 class="card-title "  data-widget="collapse" data-toggle="tooltip">اسلاید شماره 0 - نام عکس</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-warning ml-2" data-widget="collapse" data-toggle="tooltip">
+                        ویرایش</button>
+                      <button type="button" class="btn btn-danger">حذف</button>
+                    </div>
+                  </div>
+      
+                  <div class="card-body">
+      
+                  </div>
+      
+                  <div class="card-footer">
+      
+                  </div>
+      
+                </div>
+              </section>
 
             </div>
 
@@ -149,5 +172,3 @@
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
-<script src="/js/script.js"></script>

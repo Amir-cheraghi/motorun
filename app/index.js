@@ -40,7 +40,7 @@ module.exports =  class application {
         app.use(session({
             secret : process.env.SESSION_SECRET,
             resave : true,
-            saveUninitialized : true,
+            saveUninitialized : false,
             cookie : {httpOnly : true , secure : true , maxAge : process.env.COOKIE_EXPIRE},
             store : mongoStore.create({mongoUrl : process.env.DB_URL})
         }))

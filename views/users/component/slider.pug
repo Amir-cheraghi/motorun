@@ -1,0 +1,38 @@
+div.fullwidthbanner-container
+    div.fullwidthbanner(style="height:550px;")
+        ul(style="height:550px;")
+            each el in sliderData
+                li(data-transition="premium-random" data-slotamount="3")
+                    - const link = el.sliderLink ? el.sliderLink : '#'
+                    a(href= link)
+                        img(src=el.imagePath alt="slider img" width="1400" height="550")
+                    if el.sliderTitle
+                        div.caption.lfl.big_theme(data-x="120" data-y="120" data-speed="1000" data-start="500" data-easing="easeInOutBack")= el.sliderTitle
+                    if el.sliderDescription
+                        div.caption.lfl.small_theme.bg-black(data-x="120" data-y="190" data-speed="1000" data-start="700" data-easing="easeInOutBack")= el.sliderDescription
+                    if el.sliderLinkTitle
+                        div.caption.lfl.btn.btn-primary.btn_theme(data-x="120" data-y="260" data-speed="1000" data-start="900" data-easing="easeInOutBack")= el.sliderLinkTitle
+        div.tp-bannertimer
+    div(id='sliderRevLeft')
+        i.icon-chevron-left
+    div(id='sliderRevRight')
+        i.icon-chevron-right
+//- Slider End
+div.container
+    div.row
+        div.spa12
+            div.push-up.over-slider.blocks-spacer
+                div.row
+                    div.span4
+                        a.btn.btn-block.banner(href='#')
+                            span.title فروش تابستانی
+                            em تا 60% تخفیف رو کفش ها
+                    div.span4
+                        a.btn.btn-block.colored.banner(href='#')
+                            span.title ارسال رایگان
+                            em برای خرید های بالای 100 هزار تومان
+                    div.span4
+                        a.btn.btn-block.banner(href='#')
+                            span.title تضمین کیفیت
+                            em کیفیت محصولات را خودتان بسنجید
+

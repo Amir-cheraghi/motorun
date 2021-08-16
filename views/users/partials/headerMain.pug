@@ -1,0 +1,156 @@
+div.master-wrapper
+    //- Header
+    header(id='header')
+        div.container
+            div.row
+                div.span7
+                    //- LOGO
+                    a.brand
+                        img(src='images/logo.png' alt='Webmarket Logo' width='48' height='48')
+                        span.pacifico Motorun
+                        span.tagline موتوران جایی برای لوازم جانبی موتور شما
+                div.span5
+                    //- Account
+                    div.top-right
+                        div.register(style='padding-top: 10px; border-right:0')
+                            button.btn.btn-warning(href='#loginModal' data-toggle='modal') ورود
+                            span &nbsp;&nbsp;&nbsp;&nbsp;
+                            button.btn.btn-primary(href='#registerModal' data-toggle='modal') عضویت
+    //- Nav Bar
+    div.navbar.navbar-static-top(id='stickyNavbar')
+        div.navbar-inner
+            div.container
+                div.row
+                    //- nav menu and search
+                    div.span9
+                        button.btn.btn-navbar(type='button' data-toggle='collapse' data-target='.nav-collapse')
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar 
+
+                        div.nav-collapse.collapse
+                            ul.nav(id='mainNavigation')
+                                li.dropdown.active
+                                    a.dropdown-toggle(href='index.html') خانه 
+                                        b.carte
+                                    ul.dropdown-menu
+                                        li.dropdown.active
+                                            a(href='index.html') زیر منوی 1 
+                                                i.icon-caret-left.pull-right.visible-desktop 
+                                            ul.dropdown-menu
+                                                li.active 
+                                                    a(href='index.html') زیر منو 
+                                                li 
+                                                    a(href='#') زیر منو
+                                                li 
+                                                    a(href='#') زیر منو
+                                                li 
+                                                    a(href='#') زیر منو
+                                        li.dropdown
+                                            a(href='index.html') زیر منوی 1
+                                                i.icon-caret-left.pull-right.visible-desktop
+                                            ul.dropdown-menu
+                                                li.active 
+                                                    a(href='index.html') زیر منو 2 
+                                                li 
+                                                    a(href='#') زیر منو 2
+                                                li 
+                                                    a(href='#') زیر منو 2
+                                                li 
+                                                    a(href='#') زیر منو 2
+                                li.dropdown
+                                    a.dropdown-toggle(href='#') فروشگاه 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li 
+                                            a(href='#') منو دوم
+                                        li 
+                                            a(href='#') منو دوم
+                                        li 
+                                            a(href='#') منو دوم
+                                        li 
+                                            a(href='#') منو دوم
+                                li.dropdown
+                                    a.dropdown-toggle(href='#') بلاگ 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li 
+                                            a(href='#') منو سوم
+                                        li 
+                                            a(href='#') منو سوم
+                                        li 
+                                            a(href='#') منو سوم
+                                        li 
+                                            a(href='#') منو سوم
+                                li.dropdown
+                                    a.dropdown-toggle(href='#') سوالات 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li 
+                                            a(href='#') منو چهارم
+                                        li 
+                                            a(href='#') منو چهارم
+                                        li 
+                                            a(href='#') منو چهارم
+                                        li 
+                                            a(href='#') منو چهارم
+                                li 
+                                    a(href='#') درباره ما 
+                                li
+                                    a(href='#')  تماس با ما
+                            form.navbar-form.pull-right(action='#' method='GET')
+                                button(type='submit')
+                                    span.icon-search
+                                input(type='text' name='search' id='navSearchInput' placeholder='جستجو . . . ')
+                    //- nav Cart
+                    div.span3
+                        div.cart-container(id='cartContainer')
+                            div.cart
+                                p.items
+                                    span.dark-clr سبد خرید (مقدار)
+                                p.dark-clr.hidden-tablet 100 تومان
+                                a.btn.btn-danger(href='#')
+                                    i.icon-shopping-cart
+                            div.open-panel
+                                div.item-in-cart.clearfix
+                                    div.image
+                                        img(src='images/dummy/cart-items/cart-item-1.jpg' width='124' height='124' alt='cart item')
+                                    div.desc
+                                        strong
+                                            a(href='#') کلاه زمستانی
+                                        span.light-clr.qty تعداد : 1 &nbsp;
+                                            a.icon-remove-sign(href='#' title='حذف محصول')
+                                    div.price
+                                        strong 250 تومان
+                                div.item-in-cart.clearfix
+                                    div.image
+                                        img(src='images/dummy/cart-items/cart-item-1.jpg' width='124' height='124' alt='cart item')
+                                    div.desc
+                                        strong
+                                            a(href='#') کلاه زمستانی
+                                        span.light-clr.qty تعداد : 1 &nbsp;
+                                            a.icon-remove-sign(href='#' title='حذف محصول')
+                                    div.price
+                                        strong 250 تومان
+                                div.item-in-cart.clearfix
+                                    div.image
+                                        img(src='images/dummy/cart-items/cart-item-1.jpg' width='124' height='124' alt='cart item')
+                                    div.desc
+                                        strong
+                                            a(href='#') کلاه زمستانی
+                                        span.light-clr.qty تعداد : 1 &nbsp;
+                                            a.icon-remove-sign(href='#' title='حذف محصول')
+                                    div.price
+                                        strong 250 تومان
+                                div.summary
+                                    div.line
+                                        div.row-fluid
+                                            div.span6 هزینه ارسال
+                                            div.span6.align-right 20,000 تومان
+                                    div.line
+                                        div.row-fluid
+                                            div.span6 جمع کل
+                                            div.span6.align-right.size-16 270,000 تومان
+                                div.proceed
+                                    a.btn.btn-danger.pull-right.bold.higher تصویه حساب
+                                        i.icon-shopping-cart    
